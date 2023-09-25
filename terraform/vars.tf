@@ -29,7 +29,7 @@ output "external_teamcity_ip_address" {
 }
 
 output "external_nexus_ip_address" {
-    value = ["${yandex_compute_instance.test_nexus.name} = ${yandex_compute_instance.test_nexus.network_interface.0.nat_ip_address}",""]
+    value = ["${yandex_compute_instance.test_nexus.name} = ${yandex_compute_instance.test_nexus.network_interface.0.nat_ip_address}"]
 }
 
 #output "local_ip_address" {
